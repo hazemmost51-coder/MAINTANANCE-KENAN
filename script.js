@@ -124,7 +124,7 @@ function renderItemsTable() {
             <td><strong>${item.code}</strong> - ${item.name}</td>
             <td><span style="background:#e0f2fe; color:#0369a1; padding:4px 8px; border-radius:4px; font-size:12px; font-weight:bold;">${item.unit}</span></td>
             <td>
-                <input type="number" class="qty-input" value="${item.qty}" min="1" step="1" 
+                <input type="number" lang="en" class="qty-input" value="${item.qty}" min="1" step="1" 
                 onchange="updateQty(${index}, this.value)" required>
             </td>
             <td>
