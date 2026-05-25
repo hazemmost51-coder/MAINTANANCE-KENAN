@@ -237,7 +237,7 @@
         table th, table td { padding: 12px; border-bottom: 1px solid #e2e8f0; }
         table th { background-color: #f8fafc; color: var(--text-muted); font-weight: 600; }
         
-        .qty-input { width: 90px !important; padding: 6px; text-align: center; lang: "en"; }
+        .qty-input { width: 90px !important; padding: 6px; text-align: center; lang: en; }
         .remove-item-btn { 
             background: transparent; 
             color: var(--danger-color); 
