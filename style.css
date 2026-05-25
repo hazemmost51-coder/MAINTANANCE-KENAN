@@ -292,3 +292,12 @@
             table th, table td { padding: 8px; }
             .qty-input { width: 65px !important; }
         }
+
+/* إجبار حقول الكمية على عرض الأرقام الإنجليزية */
+.qty-input {
+    direction: ltr !important;
+    text-align: center; /* لجعل الرقم في منتصف الحقل */
+    font-variant-numeric: lining-nums item-variant-numeric !important;
+    -webkit-font-feature-settings: "lnum" 1;
+    font-feature-settings: "lnum" 1;
+}
