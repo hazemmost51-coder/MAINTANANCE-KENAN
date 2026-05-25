@@ -2,27 +2,27 @@ const SCRIPT_URL = "https://script.google.com/macros/s/AKfycbwh_gakr_r3K0aFiFhQC
 
 // قاعدة بيانات البنود والوحدات المسجلة مسبقاً
 const itemsDatabase = [
-    { code: "401000005", name: "Connecting or disconnecting the company's mobile generator (any capacity)", unit: "EA" },
-    { code: "401000007", name: "Laying and connecting a temporary jumper inside LV (Low Voltage) equipment to restore power during accidents, fires, or breakdowns", unit: "EA" },
-    { code: "505010003", name: "Re-tensioning an existing LV overhead service cable (any size/type)", unit: "EA" },
-    { code: "505010004", name: "Disconnecting or connecting an LV service cable from an existing overhead source for maintenance purposes / technical disconnection from the subscriber's meter", unit: "EA" },
-    { code: "204010403", name: "Making a repair joint for an existing bundled/twisted cable (any size)", unit: "EA" },
-    { code: "506000005", name: "Installing/removing/replacing a jumper between a service box and a meter box, or inside the meter box", unit: "EA" },
-    { code: "204020204", name: "Replacing/installing a jumper or a terminal connector for a single-phase MV (Medium Voltage)", unit: "EA" },
-    { code: "204020205", name: "Replacing or re-fixing the tie or support rod for an insulator, or replacing a repair sleeve for a jumper, connector, or re-fixing an MV insulator", unit: "EA" },
-    { code: "204020405", name: "Disconnecting or connecting jumpers for existing network conductors (any size)", unit: "EA" },
-    { code: "204010202", name: "Replacing an LV bundled/twisted cable (any size)", unit: "EA" },
+    { code: "506000010", name: "inspection meterbox", unit: "EA" },
+    { code: "401000005", name: "Connecting or disconnecting the generator", unit: "EA" },
+    { code: "401000007", name: "LV temporary jumper", unit: "EA" },
+    { code: "505010003", name: "Re-tensioning an existing LV overhead cable", unit: "EA" },
+    { code: "505010004", name: "Disconnecting or connecting an overhead meter", unit: "EA" },
+    { code: "204010403", name: "Qouaderplex joint", unit: "EA" },
+    { code: "506000005", name: "Installing/removing/replacing a jumper inside service box or meter box", unit: "EA" },
+    { code: "204020205", name: "HT jumper", unit: "EA" },
+    { code: "204020405", name: "Disconnecting or connecting jumpers HT or LV", unit: "EA" },
+    { code: "204010202", name: "Replacing an Quaderplex cable", unit: "MTR" },
     { code: "304040207", name: "Disconnecting/connecting an existing riser cable on an MV/LV pole", unit: "EA" },
-    { code: "305010502", name: "Replacing a single-phase terminal connector for an existing LV cable (any size)", unit: "EA" },
-    { code: "311000007", name: "Replacing/re-fixing a cover or door of a sub-distribution panel (any type)", unit: "EA" },
-    { code: "206000009", name: "Cutting or trimming trees near the overhead line", unit: "EA" },
-    { code: "309010511", name: "Removing an LV circuit breaker or a fuse box (any size)", unit: "EA" },
-    { code: "508000007", name: "Replacing meter box mounting brackets / re-fixing a meter box (any type/size)", unit: "EA" },
-    { code: "205020304", name: "Replacing an MV fuse link (element) for an overhead line / equipment", unit: "EA" },
-    { code: "204010405", name: "Replacing a single-phase terminal connector for an existing bundled cable (any size)", unit: "EA" },
-    { code: "309010501", name: "Disconnecting or connecting an existing 4-core LV cable / four single phases to existing ground-mounted equipment", unit: "EA" },
-    { code: "506000010", name: "Field inspection / survey of a subscriber's meter", unit: "EA" },
-    { code: "309010507", name: "Replacing a fuse in a meter / sub or main distribution panel", unit: "EA" }
+    { code: "305010502", name: "Replacing a LV lug", unit: "EA" },
+    { code: "311000007", name: "Replacing/re-fixing cabinet cover", unit: "EA" },
+    { code: "206000009", name: "Cutting trees", MTR: "EA" },
+    { code: "309010511", name: "Removing an LV circuit breaker or a fuse box", unit: "EA" },
+    { code: "508000007", name: "re-install a meter box", unit: "EA" },
+    { code: "205020304", name: "Disconnecting/connecting an MV fuse link", unit: "EA" },
+    { code: "205020304", name: "Replacing an MV fuse link", unit: "EA" },
+    { code: "204010405", name: "Replacing a qouderplex LV lug", unit: "EA" },
+    { code: "309010501", name: "Disconnecting or connecting an underground cable", unit: "EA" },
+    { code: "309010507", name: "Replacing minipiller fuse", unit: "EA" }
 ];
 
 let cases = []; 
